@@ -25,7 +25,10 @@
   "dependencies": {
     "btoa": "^1.2.1",
     "express": "^4.18.2",
-    "node-fetch": "^2.6.12"
+    "isomorphic-unfetch": "^4.0.2",
+    "mongoose": "^7.4.1",
+    "node-fetch": "^2.6.12",
+    "spotify-url-info": "^3.2.5"
   },
   "devDependencies": {
     "eslint": "^8.45.0"
