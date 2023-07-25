@@ -1,0 +1,25 @@
+{
+  "name": "sotd-bot-v3-backend",
+  "version": "1.0.0",
+  "description": "SOTD bot V3 api backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SOTD-Bot-V3/SOTD-Bot-V3-Backend.git"
+  },
+  "keywords": [
+    "Bot",
+    "API",
+    "backen",
+    "express"
+  ],
+  "author": "ComputerComa",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/SOTD-Bot-V3/SOTD-Bot-V3-Backend/issues"
+  },
+  "homepage": "https://github.com/SOTD-Bot-V3/SOTD-Bot-V3-Backend#readme"
+}
