@@ -2,9 +2,9 @@
   "name": "sotd-bot-v3-backend",
   "version": "1.0.0",
   "description": "SOTD bot V3 api backend",
-  "main": "index.js",
+  "main": "./src/server.js",
   "scripts": {
-    "dev": "node ./"
+    "dev": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",

@@ -6,5 +6,5 @@ router.route('/').get((req, res) => {
 	res.send(`<h2>Hello from ${req.baseUrl}</h2>`);
 });
 router.use('/suggestions', suggestionsRouter);
-router.use('/suggestions', announcementsRouter);
+router.use('/announcements', announcementsRouter);
 module.exports = router;

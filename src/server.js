@@ -8,6 +8,6 @@ app.get('/', (req, res) => {
 	res.redirect('/api/v1');
 });
 
-app.listen(config.PORT, () => {
-	console.info(`Listening on http://localhost:${config.PORT}`);
+app.listen(config.port, () => {
+	console.info(`Listening on http://localhost:${config.port}`);
 });
