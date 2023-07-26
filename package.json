@@ -4,7 +4,7 @@
   "description": "SOTD bot V3 api backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node ./"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/SOTD-Bot-V3/SOTD-Bot-V3-Backend#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "btoa": "^1.2.1",
     "express": "^4.18.2",
     "isomorphic-unfetch": "^4.0.2",
@@ -31,6 +32,7 @@
     "spotify-url-info": "^3.2.5"
   },
   "devDependencies": {
-    "eslint": "^8.45.0"
+    "eslint": "^8.45.0",
+    "nodemon": "^3.0.1"
   }
 }
