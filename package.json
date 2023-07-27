@@ -4,7 +4,8 @@
   "description": "SOTD bot V3 api backend",
   "main": "./src/server.js",
   "scripts": {
-    "dev": "nodemon ./src/server.js"
+    "dev": "nodemon ./src/server.js",
+    "prod": "NODE_ENV=production nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,9 @@
     "body-parser": "^1.20.2",
     "btoa": "^1.2.1",
     "express": "^4.18.2",
+    "express-rate-limit": "^6.8.1",
     "isomorphic-unfetch": "^4.0.2",
+    "jsonschema": "^1.4.1",
     "mongoose": "^7.4.1",
     "node-fetch": "^2.6.12",
     "spotify-url-info": "^3.2.5"

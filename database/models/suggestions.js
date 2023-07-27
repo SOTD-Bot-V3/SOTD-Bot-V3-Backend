@@ -15,15 +15,28 @@ const suggestionSchema = new mongoose.Schema({
 	songUrl: {
 		type: String,
 		required: true,
+		match: [/(https?:\/\/open.spotify.com\/(track|user|artist|album)\/[a-zA-Z0-9]+(\/playlist\/[a-zA-Z0-9]+|)|spotify:(track|user|artist|album):[a-zA-Z0-9]+(:playlist:[a-zA-Z0-9]+|))/],
 	},
 	songName: {
 		type: String,
 		required: true,
 	},
-	used: {
-		type: Boolean,
+	artistName: {
+		type: String,
+		required: true,
+	},
+	albumArtUrl: {
+		type: String,
+		required: true,
+	},
+	albumColor: {
+		type: String,
+		required: true,
+	},
+	suggestedBy:{
+		type: String,
 		required: true,
 	},
 });
-const suggestionHistory = mongoose.model('Suggestion Hisotry', suggestionSchema);
-module.exports = { suggestionHistory };
+const suggestionHistoryModel = mongoose.model('Suggestion Hisotry', suggestionSchema);
+module.exports = { suggestionHistoryModel };

@@ -14,6 +14,6 @@ const settingsSchema = new mongoose.Schema({
 	},
 
 });
-const serverSettings = mongoose.model('Server Settings', settingsSchema);
+const serverSettingsModel = mongoose.model('Server Settings', settingsSchema);
 
-module.exports = { serverSettings };
+module.exports = { serverSettingsModel };

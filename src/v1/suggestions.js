@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
-router.use(express.json());
+const bodyParser = require('body-parser');
+// const { suggestionHistoryModel } = require('../../database/models/suggestions');
+router.use(bodyParser.json());
 router.route('/:serverID').get((req, res) => {
 	res.sendStatus(200);
 });

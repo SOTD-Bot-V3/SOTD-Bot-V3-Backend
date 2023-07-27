@@ -1,8 +1,22 @@
 const express = require('express');
 const router = express.Router();
-router.use(express.json());
-router.route('/:serverID').get((req, res) => {
-	res.sendStatus(200);
+const bodyParser = require('body-parser');
+const { serverSettingsModel } = require('../../database/models/serverSettings');
+router.use(bodyParser.json());
+router.route('/:serverID').get(async (req, res, next) => {
+	try {
+		await serverSettingsModel.findOne({ serverId: req.params['serverID'] }).then(settings => {
+			if (settings) {
+				res.json(settings);
+			}
+			else {
+				res.json({});
+			}
+		});
+	}
+	catch (error) {
+		return next(error);
+	}
 });
 router.route('/:serverID').post((req, res) => {
 	res.sendStatus(202);
