@@ -12,6 +12,14 @@ const settingsSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	globalSuggestionSubmissionsOptIn: {
+		type: Boolean,
+		required: true,
+	},
+	globalAnnouncementOptIn: {
+		type: Boolean,
+		required: true,
+	},
 
 });
 const serverSettingsModel = mongoose.model('Server Settings', settingsSchema);
