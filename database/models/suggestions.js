@@ -38,5 +38,5 @@ const suggestionSchema = new mongoose.Schema({
 		required: true,
 	},
 });
-const suggestionHistoryModel = mongoose.model('Suggestion Hisotry', suggestionSchema);
+const suggestionHistoryModel = mongoose.model('suggestionHisotry_v3', suggestionSchema);
 module.exports = { suggestionHistoryModel };

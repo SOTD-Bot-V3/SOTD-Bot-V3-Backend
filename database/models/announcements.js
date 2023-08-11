@@ -43,6 +43,6 @@ const announcementSchema = new mongoose.Schema({
 	},
 
 });
-const announcementHistoryModel = mongoose.model('Announcement History', announcementSchema);
+const announcementHistoryModel = mongoose.model('announcement_history_v3', announcementSchema);
 
 module.exports = { announcementHistoryModel };

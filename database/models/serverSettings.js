@@ -22,6 +22,6 @@ const settingsSchema = new mongoose.Schema({
 	},
 
 });
-const serverSettingsModel = mongoose.model('Server Settings', settingsSchema);
+const serverSettingsModel = mongoose.model('server_settings_v3', settingsSchema);
 
 module.exports = { serverSettingsModel };

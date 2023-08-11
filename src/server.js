@@ -10,8 +10,12 @@ mongoose.connect(config.mongooseURI, {
 }).then(() => {
 	console.log('Connected to database');
 	this.connection = mongoose.connection;
+	app.listen(config.port, () => {
+		console.info(`Listening on http://localhost:${config.port}`);
+	});
 }).catch(err => {
 	console.error(err);
+	console.error('Dataase Cunnection failed.. server not started');
 	return null;
 });
 
@@ -20,6 +24,3 @@ app.get('/', (req, res) => {
 	res.redirect('/api/v1');
 });
 
-app.listen(config.port, () => {
-	console.info(`Listening on http://localhost:${config.port}`);
-});
